@@ -550,6 +550,11 @@
     anim.duration = duration;
     anim.fromValue= [NSValue valueWithCATransform3D:CATransform3DRotate(aTransform, startTransformValue, aX, aY, aZ)];
     anim.toValue=[NSValue valueWithCATransform3D:CATransform3DRotate(aTransform, endTransformValue, aX, aY, aZ)];
+
+    if(self.timingFunction) {
+      anim.timingFunction = self.timingFunction;
+    }
+
     if (setDelegate) {
         anim.delegate = self;
     }

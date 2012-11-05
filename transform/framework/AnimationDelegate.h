@@ -75,6 +75,9 @@ typedef enum {
 // the duration of the next animation cycle
 @property (nonatomic) float nextDuration;
 
+// The timing function to use
+@property (nonatomic) CAMediaTimingFunction *timingFunction;
+
 @property (nonatomic) SequenceType sequenceType;
 @property (nonatomic) int animationState;
 @property (nonatomic) BOOL animationLock;
