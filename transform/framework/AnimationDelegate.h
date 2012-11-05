@@ -36,7 +36,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class GenericAnimationView;
+@class GenericAnimationView, CAMediaTimingFunction;
 
 typedef enum {
     kSequenceAuto,         // animation continues without input, looping through image data
